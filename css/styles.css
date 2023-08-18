@@ -160,6 +160,7 @@ a {
 .link.navigation-link.current-page {
   position: relative;
   display: block;
+  color: var(--color-pressed-state);
 }
 
 .link.navigation-link.current-page::after {
@@ -171,6 +172,7 @@ a {
   left: 0;
   background-color: var(--color-pressed-state);
   border-radius: 2px;
+  pointer-events: none;
 }
 
 .strengths-section .strengths-list {
