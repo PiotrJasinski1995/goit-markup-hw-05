@@ -279,8 +279,8 @@ a {
   border-radius: 4px;
   border: 1px solid var(--color-subtle-text);
   --color-main: var(--color-subtle-text);
-  transition: --color-main var(--transition-general),
-    border-color var(--transition-general);
+  transition: border-color var(--transition-general),
+    --color-main var(--transition-general);
 }
 
 .link.customer-link:hover,
@@ -626,6 +626,15 @@ a {
   border: 1px solid #0000001a;
   border-radius: 50%;
   --color-main: var(--color-dark);
+  transition: background-color var(--transition-general),
+    --color-main var(--transition-general);
+}
+
+.modal > .close-btn:hover,
+.modal > .close-btn:focus,
+.modal > .close-btn:active {
+  background-color: var(--color-pressed-state);
+  --color-main: var(--color-white-background);
 }
 
 .is-hidden {
